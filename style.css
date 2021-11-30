@@ -1,6 +1,6 @@
 /* Basic Style */
 
-body {
+.page {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
@@ -43,8 +43,7 @@ ul {
     padding: 0px;
 }
 
-li,
-h3 {
+li {
     list-style: none;
 }
 
@@ -53,7 +52,7 @@ button{
     outline: none;
 }
 
-button {
+.button {
     background: none;
     border: 0px;
     color: #888;
@@ -63,13 +62,13 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     color: #3a3A3a;
 }
 
 /* Heading */
 
-h3 {
+.title-of-section {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -99,7 +98,7 @@ h3 {
 
 /* New Task */
 
-.add-todo-list-section h3 {
+.add-todo-list-section .title-of-section {
     display: block;
     margin: 0 0 20px;
 }
@@ -110,7 +109,7 @@ h3 {
 
 /* Task list */
 
-li {
+.list-item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -119,22 +118,22 @@ li {
     align-items: center;
 }
 
-li > * {
+.list-item > * {
     vertical-align: middle;
 }
 
-li > .check-list {
+.check-list {
     margin: 0 10px;
 }
 
-li > .label-todo {
+.label-todo {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-li > .new-list-todo {
+.new-list-todo {
     width: 226px;
 }
 
@@ -156,7 +155,7 @@ li > .new-list-todo {
 }
 
 /* Edit Task */
-ul li .input-text,
+ul .list-item .input-text,
 .new-list-todo {
     display: none
 }
@@ -170,7 +169,7 @@ ul .edit-mode .label-todo {
     display: none;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .header { 
       text-align: center;
