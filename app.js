@@ -32,6 +32,7 @@ let createNewTaskElement = function(taskString){
   let deleteButton = document.createElement('button');//delete button
   let deleteButtonImg = document.createElement('img');//delete button image
 
+    listItem.className = 'list-item';
     label.innerText = taskString;
     label.className = 'label-todo';
     
@@ -42,9 +43,9 @@ let createNewTaskElement = function(taskString){
     editInput.className = 'input-text new-list-todo';
 
     editButton.innerText = 'Edit'; //innerText encodes special characters, HTML does not.
-    editButton.className = 'edit';
+    editButton.className = 'button edit';
 
-    deleteButton.className = 'delete';
+    deleteButton.className = 'button delete';
     deleteButtonImg.src = './remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 

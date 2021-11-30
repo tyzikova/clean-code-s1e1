@@ -7,51 +7,51 @@
     <link rel="stylesheet" href="style.css" media="screen">
     <title>Todo App</title>
   </head>
-  <body>
+  <body class="page">
     <header class="header">
       <img src="./eisenhower-matrix.jpg" alt="matrix of eisenhower">
       <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
     <main class="main">
       <section class="add-todo-list-section">
-        <h3>Add Item</h3>
+        <h3 class="title-of-section">Add Item</h3>
         <div class="task-row">
           <input id="new-task" class="input-text" type="text">
-          <button>Add</button>
+          <button class="button">Add</button>
         </div>
       </section>
       <section class="incomplete-todo-list-section">
-        <h3>Todo</h3>
+        <h3 class="title-of-section">Todo</h3>
         <ul id="incomplete-tasks">
-          <li>
+          <li class="list-item">
             <input type="checkbox" class="check-list">
             <label class="label-todo">Pay Bills</label>
             <input type="text" class="input-text">
-            <button class="edit">Edit</button>
-            <button class="delete">
+            <button class="button edit">Edit</button>
+            <button class="button delete">
               <img src="./remove.svg" alt="icon of remove">
             </button>
           </li>
-          <li class="edit-mode">
+          <li class="list-item edit-mode">
             <input type="checkbox" class="check-list">
             <label class="label-todo">Go Shopping</label>
             <input type="text" value="Go Shopping" class="input-text">
-            <button class="edit">Save</button>
-            <button class="delete">
+            <button class="button edit">Save</button>
+            <button class="button delete">
               <img src="./remove.svg" alt="icon of remove">
             </button>
           </li>
         </ul>
       </section>
       <section class="completed-todo-list-section">
-        <h3>Completed</h3>
+        <h3 class="title-of-section">Completed</h3>
         <ul id="completed-tasks">
-          <li>
+          <li class="list-item">
             <input type="checkbox" class="check-list" checked>
             <label class="label-todo">See the Doctor</label>
             <input type="text" class="input-text">
-            <button class="edit">Edit</button>
-            <button class="delete">
+            <button class="button edit">Edit</button>
+            <button class="button delete">
               <img src="./remove.svg" alt="icon of remove">
             </button>
           </li>
