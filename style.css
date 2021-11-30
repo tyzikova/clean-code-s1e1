@@ -13,7 +13,7 @@
   text-align: right;
 }
 
-.header img {
+.header .image-of-header {
   width: 100%;
 }
 
@@ -137,13 +137,13 @@ button{
   width: 226px;
 }
 
-.delete img {
+.delete .icon-remove {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete img:hover {
+.delete .icon-remove:hover {
   transform: rotateZ(0);
 }
 
@@ -173,6 +173,6 @@ button{
 
   .header {
     text-align: center;
-    }
+  }
 
 }
