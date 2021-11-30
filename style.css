@@ -155,17 +155,17 @@ button{
 }
 
 /* Edit Task */
-ul .list-item .input-text,
+.list-item .input-text,
 .new-list-todo {
     display: none
 }
 
-ul .edit-mode .input-text {
+.edit-mode .input-text {
     display: inline-block;
     width: 224px;
 }
 
-ul .edit-mode .label-todo {
+.edit-mode .label-todo {
     display: none;
 }
 
